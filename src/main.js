@@ -1,6 +1,10 @@
 //importar la libreria dayjs
 import dayjs from "dayjs"
 
+//importar el archivo de estilos
+import "./styles.css"
+
+
 //boton referenciado por id
 const boton = document.getElementById("anadir")
 //cuadro del texto referenciado por id
