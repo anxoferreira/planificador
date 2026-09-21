@@ -35,3 +35,6 @@ git push origin main
 
 npm i -g netlify-cli
 nmp login
+
+## preparar los test
+
