@@ -1,26 +1,30 @@
-//importar la libreria dayjs
-import dayjs from "dayjs"
+import { formatearFecha } from './utils.js'
+import './style.css'
+import confetti from 'canvas-confetti' 
+import.meta.env.VITE_VERSION
 
-import { formatearFecha } from "./utils.js"
+const boton = document.getElementById('añadir')
+const input = document.getElementById('texto')
+const lista = document.getElementById('lista')
 
-//importar el archivo de estilos
-import "./styles.css"
+boton.addEventListener('click', guardarPlan)
 
-//boton referenciado por id
-const boton = document.getElementById("anadir")
-//cuadro del texto referenciado por id
-const input = document.getElementById("texto")
-//lista referenciada por id
-const lista = document.getElementById("lista")
-
-//poner el boton a la escucha del evento click y que ejecute la funcion guardarPlan
-boton.addEventListener("click", guardarPlan)
-
-//funcion que guarda el plan en localStorage
 function guardarPlan() {
-  const fechaHoy = formatearFecha(dayjs())
-  const li = document.createElement("li")
-  li.textContent = input.value + " - " + fechaHoy
+  const pi = 3.14
+  const fechaHoy = formatearFecha(new Date())
+  const li = document.createElement('li')
+  li.textContent = input.value + ' - ' + fechaHoy
   lista.appendChild(li)
-  input.value = ""
+  input.value = ''
+
+
+  confetti({
+    particleCount: 150,
+    startVelocity: 30,
+    spread: 360,
+    origin: {
+      x: Math.random(),
+      y: Math.random() - 0.2
+    }
+  })
 }

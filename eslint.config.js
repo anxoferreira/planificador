@@ -1,15 +1,15 @@
 export default [
   {
-    files: ["**/*.js"],
+    files: ['**/*.js'],
 
-    ignores: ["node_modules/**", "dist/**"],
+    ignores: ['node_modules/**', 'dist/**'],
 
     rules: {
-      "no-unused-vars": "warn",
-      "no-console": "off",
-      eqeqeq: "error",
-      quotes: ["error", "double"],
-      semi: ["error", "never"],
+      'no-unused-vars': 'warn',
+      'no-console': 'off',
+      eqeqeq: 'error',
+      quotes: ['error', 'single'],
+      semi: ['error', 'never'],
     },
   },
 ]

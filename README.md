@@ -1,40 +1,69 @@
-## inicializar el proyexto
+## Inicializar el proyecto
 
+```
 npm init
+```
 
-## descargar dependencia de desarrollo (vite)
+## Descargar una dependecia desarrollo (vite)
 
+```
 npm i -D vite
+```
 
-## descargar una dependencia de produccion en este caso dayjs
+## Descargar una dependencia de produccion (dayjs)
 
+```
 npm i dayjs
+```
 
-## probar la app en modo local (desarrollo)
+## Probar la app en modo local (desarrollo)
 
+```
 npm run dev
+```
 
-## construir la app
+## Construir la app
 
+```
 npm run build
+```
 
-## arrancar la app en modo produccion
+## Arrancar la aplicación (modo producción)
 
+```
 npm run preview
+```
 
-## poner en github
+## Publicar en github
 
+```
 git init
+ojo con el .gitignore
 git add .
-git commit -m "mensaje"
-git branch
-git remote add origin https://github.com/anxoferreira/planificador.git
+git commit -m "First commit"
+git branch -M main
+git remote add origin https://github.com/kant003/planificador.git
 git push origin main
+```
 
-## desplegar netlify usando cli
+## Desplegar en netlify usando la CLI
 
+```
 npm i -g netlify-cli
-nmp login
+netlify login
+netlify init
+netlify build
+netlify deploy
+```
 
-## preparar los test
+## Instalar un linter y un formateador:
 
+```
+npm i -D eslint prettier
+```
+
+## Prepar los test
+
+```
+npm i -D vitest
+```
