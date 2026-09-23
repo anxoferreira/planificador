@@ -3,17 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
-  "author": "Angel",
+  "author": "Anxo",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "vitest",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "test": "vitest"
   },
   "devDependencies": {
     "eslint": "^10.10.0",

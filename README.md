@@ -4,13 +4,13 @@
 npm init
 ```
 
-## Descargar una dependecia desarrollo (vite)
+## Descargar una dependencia de desarrollo (vite)
 
 ```
 npm i -D vite
 ```
 
-## Descargar una dependencia de produccion (dayjs)
+## DEscargar una dependencia de producción (dayjs)
 
 ```
 npm i dayjs
@@ -22,7 +22,7 @@ npm i dayjs
 npm run dev
 ```
 
-## Construir la app
+## Para construir la aplicación usamos
 
 ```
 npm run build
@@ -31,7 +31,7 @@ npm run build
 ## Arrancar la aplicación (modo producción)
 
 ```
-npm run preview
+
 ```
 
 ## Publicar en github
@@ -40,30 +40,44 @@ npm run preview
 git init
 ojo con el .gitignore
 git add .
-git commit -m "First commit"
-git branch -M main
-git remote add origin https://github.com/kant003/planificador.git
-git push origin main
+git commit -m "first commit"
+git branch (Para ver con que rama estoy trabajando)
+git branch -M main (cambiamos el nombre de la rama para no ofender a los esclavos)
+git push -u origin main
 ```
 
 ## Desplegar en netlify usando la CLI
 
 ```
 npm i -g netlify-cli
-netlify login
-netlify init
-netlify build
-netlify deploy
+npm login (registrarse en netlify si no lo estás)
 ```
 
 ## Instalar un linter y un formateador:
 
 ```
-npm i -D eslint prettier
+npm i -D prettier
 ```
 
-## Prepar los test
+
+## Preparar los test
 
 ```
 npm i -D vitest
+```
+
+
+## Trabajo para mi
+
+```
+Comitea los cambios
+Pushear los cambios a github
+Añadir  confetti cuando se guarde un texto
+```
+
+
+## Canvas confetti
+
+```
+https://www.npmjs.com/package/canvas-confetti
 ```
