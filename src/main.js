@@ -13,17 +13,17 @@ boton.addEventListener('click', guardarPlan)
 function guardarPlan(e) {
   e.preventDefault()
   const minutos = inputMin.value
-  
+
   let peso = calcularPeso(minutos)
-
   const fechaHoy = formatearFecha(new Date())
-
   const li = document.createElement('li')
 
   li.textContent =
     input.value + ' - ' + fechaHoy + ' ' + minutos + ' (' + peso + ')'
   lista.appendChild(li)
+
   input.value = ''
+  inputMin.value = ''
 
   confetti({
     particleCount: 100,
