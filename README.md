@@ -59,13 +59,11 @@ npm login (registrarse en netlify si no lo estás)
 npm i -D prettier
 ```
 
-
 ## Preparar los test
 
 ```
 npm i -D vitest
 ```
-
 
 ## Trabajo para mi
 
@@ -75,9 +73,12 @@ Pushear los cambios a github
 Añadir  confetti cuando se guarde un texto
 ```
 
-
 ## Canvas confetti
 
 ```
 https://www.npmjs.com/package/canvas-confetti
 ```
+
+## test e2e
+
+npm init playwright@latest
